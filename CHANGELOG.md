@@ -1,5 +1,8 @@
 # Changelog
 
+## 8.125.0-beta.8 - 2022-05-13
+* [#999](https://github.com/pakrym-stripe/stripe-php/pull/999) DESCRIBE CHANGES HERE (try to use the same style, tense, etc. as the other entries)
+
 ## 8.125.0-beta.7 - 2022-05-13
 * [#3](https://github.com/pakrym-stripe/stripe-php/pull/3) API Updates
   * Add support for new resource `FundingInstructions`
