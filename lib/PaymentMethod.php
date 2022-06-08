@@ -19,6 +19,7 @@ namespace Stripe;
  * @property string $id Unique identifier for the object.
  * @property string $object String representing the object's type. Objects of the same type share the same value.
  * @property \Stripe\StripeObject $acss_debit
+ * @property \Stripe\StripeObject $affirm
  * @property \Stripe\StripeObject $afterpay_clearpay
  * @property \Stripe\StripeObject $alipay
  * @property \Stripe\StripeObject $au_becs_debit
@@ -30,6 +31,7 @@ namespace Stripe;
  * @property \Stripe\StripeObject $card_present
  * @property int $created Time at which the object was created. Measured in seconds since the Unix epoch.
  * @property null|string|\Stripe\Customer $customer The ID of the Customer to which this PaymentMethod is saved. This will not be set when the PaymentMethod has not been saved to a Customer.
+ * @property \Stripe\StripeObject $customer_balance
  * @property \Stripe\StripeObject $eps
  * @property \Stripe\StripeObject $fpx
  * @property \Stripe\StripeObject $giropay
@@ -38,11 +40,13 @@ namespace Stripe;
  * @property \Stripe\StripeObject $interac_present
  * @property \Stripe\StripeObject $klarna
  * @property \Stripe\StripeObject $konbini
+ * @property \Stripe\StripeObject $link
  * @property bool $livemode Has the value <code>true</code> if the object exists in live mode or the value <code>false</code> if the object exists in test mode.
  * @property null|\Stripe\StripeObject $metadata Set of <a href="https://stripe.com/docs/api/metadata">key-value pairs</a> that you can attach to an object. This can be useful for storing additional information about the object in a structured format.
  * @property \Stripe\StripeObject $oxxo
  * @property \Stripe\StripeObject $p24
  * @property \Stripe\StripeObject $paynow
+ * @property \Stripe\StripeObject $radar_options Options to configure Radar. See <a href="https://stripe.com/docs/radar/radar-session">Radar Session</a> for more information.
  * @property \Stripe\StripeObject $sepa_debit
  * @property \Stripe\StripeObject $sofort
  * @property string $type The type of the PaymentMethod. An additional hash is included on the PaymentMethod with a name matching this value. It contains additional information specific to the PaymentMethod type.
