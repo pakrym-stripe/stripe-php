@@ -1,5 +1,26 @@
 # Changelog
 
+## 8.125.0-beta.11 - 2022-06-16
+* [#4](https://github.com/pakrym-stripe/stripe-php/pull/4) API Updates
+  * Remove support for resources `OrderItem` and `OrderReturn`
+  * Add support for `cancel`, `list_line_items`, `reopen`, and `submit` methods on resource `Order`
+  * Remove support for `pay` and `return_order` methods on resource `Order`
+  * Remove support for `order` on `Charge`
+  * Add support for `amount_discount`, `amount_tax`, and `product` on `LineItem`
+  * Add support for `amount_subtotal`, `amount_total`, `automatic_tax`, `billing_details`, `discounts`, `ip_address`, `line_items`, `payment`, `shipping_cost`, `shipping_details`, `tax_details`, and `total_details` on `Order`
+  * Add support for `description` on `Order` and `Subscription`
+  * Remove support for `amount_returned`, `amount`, `application_fee`, `charge`, `email`, `external_coupon_code`, `items`, `returns`, `selected_shipping_method`, `shipping_methods`, `shipping`, `status_transitions`, `updated`, and `upstream_id` on `Order`
+  * Change type of `Order.status` from `string` to `enum`
+  * Add support for `consent_collection`, `customer_creation`, `payment_intent_data`, `shipping_options`, `submit_type`, and `tax_id_collection` on `PaymentLink`
+* [#3](https://github.com/pakrym-stripe/stripe-php/pull/3) API Updates
+  * Add support for new resource `FundingInstructions`
+  * Add support for `customer_balance` on `PaymentMethod`
+  * Add support for new value `customer_balance` on enum `PaymentMethod.type`
+* [#2](https://github.com/pakrym-stripe/stripe-php/pull/2) API Updates
+  * Add support for new resource `FundingInstructions`
+  * Add support for `customer_balance` on `PaymentMethod`
+  * Add support for new value `customer_balance` on enum `PaymentMethod.type`
+
 ## 8.125.0-beta.10 - 2022-05-13
 * [#4](https://github.com/pakrym-stripe/stripe-php/pull/4) API Updates
   * Remove support for resources `OrderItem` and `OrderReturn`
